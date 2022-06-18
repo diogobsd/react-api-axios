@@ -1,6 +1,5 @@
 #### react-api-axios
-API data using React + Axios + Vite
-
-To run
+API data with React + Axios + Vite
+* To run:
 #### npm install
 #### npm run dev
