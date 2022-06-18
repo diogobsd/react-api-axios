@@ -1,5 +1,6 @@
 import { useFetch } from './hooks/useFetch';
 
+/* DEFINE TIPO DE DADOS */
 type Repository = {
   full_name: string,
   description: string
@@ -7,6 +8,7 @@ type Repository = {
 
 function App() {
 
+/* CONSULTA API via get */
 const { data: repositories, isFetching } = useFetch<Repository[]>('users/diogobsd/repos')
 
   return (
@@ -21,7 +23,6 @@ const { data: repositories, isFetching } = useFetch<Repository[]>('users/diogobs
         )
       })}
     </ul>
-
   )
 }
 
